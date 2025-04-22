@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilização geral do body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #6dc6e7;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho e navegação */
+  header {
+    background-color: #3c3c3c;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffa500;
+  }
+  
+  /* Seções */
+  section {
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Listas */
+  ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Parágrafos */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Tabelas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #aaa;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, select, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Imagens e mídias */
+  img {
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  video, audio {
+    margin-top: 10px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    table, thead, tbody, th, td, tr {
+      display: block;
+      text-align: left;
+    }
+  
+    th {
+      background-color: transparent;
+      font-weight: bold;
+    }
+  
+    td {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td::before {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+  
